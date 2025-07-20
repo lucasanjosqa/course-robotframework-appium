@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-07-20T11:10:15.652391" rpa="false" schemaversion="5">
+<suite id="s1" name="Yodapp-Robot" source="C:\QAx\projects\yodapp-robot">
+<suite id="s1-s1" name="Tests" source="C:\QAx\projects\yodapp-robot\tests">
+<suite id="s1-s1-s1" name="Home" source="C:\QAx\projects\yodapp-robot\tests\home.robot">
+<test id="s1-s1-s1-t1" name="Deve abrir a tela principal" line="7">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>http://localhost:4723</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Android Emulator</arg>
+<arg>automationName=UIAutomator2</arg>
+<arg>app=${EXECDIR}/app/yodapp-beta.apk</arg>
+<arg>udid=emulator-5554</arg>
+<arg>autoGrantPermissions=true</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-07-20T11:10:15.845037" elapsed="6.872203"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Yodapp</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-07-20T11:10:22.717746" elapsed="5.060639"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>Mobile Training</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-07-20T11:10:27.778722" elapsed="0.021308"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="AppiumLibrary">
+<arg>by Papito</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" start="2025-07-20T11:10:27.800335" elapsed="0.022364"/>
+</kw>
+<kw name="Close Application" owner="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" start="2025-07-20T11:10:27.823000" elapsed="0.316323"/>
+</kw>
+<status status="PASS" start="2025-07-20T11:10:15.843789" elapsed="12.295868"/>
+</test>
+<status status="PASS" start="2025-07-20T11:10:15.712587" elapsed="12.427809"/>
+</suite>
+<status status="PASS" start="2025-07-20T11:10:15.711139" elapsed="12.430026"/>
+</suite>
+<status status="PASS" start="2025-07-20T11:10:15.693148" elapsed="12.448658"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Yodapp-Robot" id="s1" pass="1" fail="0" skip="0">Yodapp-Robot</stat>
+<stat name="Tests" id="s1-s1" pass="1" fail="0" skip="0">Yodapp-Robot.Tests</stat>
+<stat name="Home" id="s1-s1-s1" pass="1" fail="0" skip="0">Yodapp-Robot.Tests.Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
